@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <div>
+            <button id="azul">Clickee para que el fondo sea azul</button>
+        </div>
+
+        <div>
+            <button id="rojo">Clickee para que el fondo sea rojo</button>
+        </div>
+
+        <div>
+            <button id="amarillo">Clickee para que el fondo sea amarillo</button>
+        </div>
+        <script>
+            const azul = document.getElementById("azul");
+            const rojo = document.getElementById("rojo");
+            const amarillo = document.getElementById("amarillo");
+
+            azul.addEventListener('click', function(){
+                document.body.style.backgroundColor = "blue";
+            });
+
+            rojo.addEventListener('click', function(){
+                document.body.style.backgroundColor = "red";
+            });
+
+            amarillo.addEventListener('click', function(){
+                document.body.style.backgroundColor = "yellow";
+            });
+        </script>
+    </body>
+</html>

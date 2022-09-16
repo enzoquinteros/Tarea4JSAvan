@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+            <textarea maxlength="150" id="texto"></textarea>
+            <div id="contador">0/150</div>
+
+        <script>
+            const texto = document.getElementById('texto');
+            const contador = document.getElementById('contador');
+            texto.addEventListener('input', function(e) {
+                const target = e.target;
+                const Maximo = target.getAttribute('maxlength');
+                const ContadorCaracter = target.value.length;
+                contador.innerHTML = `${ContadorCaracter}/${Maximo}`;
+            });
+        </script>
+    </body>
+</html>
